@@ -6,12 +6,12 @@ import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
     const [title, setTitle] = useState(props.title);
-
+    
 
     const clickHandler = () => {
         setTitle('Updated!');
         console.log(title);
-    }
+    };
 
   return (
     <Card className='expense-item'>
@@ -22,6 +22,7 @@ const ExpenseItem = (props) => {
       </div>
       <button onClick={clickHandler}>Change Title</button>
     </Card>
+
   );
 }
 
